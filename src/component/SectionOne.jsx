@@ -1,117 +1,70 @@
 import { motion } from "framer-motion";
-
-import  { hero, logo }  from "../assets";
-import { SectionWrapper } from "../hoc";
+import { imagesSlider } from "../constant";
+import { useState } from "react";
+import { logo } from "../assets";
 
 const SectionOne = () => {
+  const [index, setIndex] = useState(0)
+
+  function nextStep() {
+    if (index === imagesSlider.length - 1) {
+      setIndex(0)
+      return
+    }
+    setIndex(index + 1)
+  }
+
+  function prevStep() {
+    if (index === 0) {
+      setIndex(imagesSlider.length - 1)
+      return
+    }
+    setIndex(index - 1)
+  }
+
   return (
-    <section className="flex flex-col relative">
+    <section className="w-full h-[100vh] flex flex-col items-center relative">
       
       {/* navbar */}
-      <div className="w-[90%] mx-auto flex gap-5 md:gap-[60%]">
-        <img className="w-[133px] object-contain" src={logo} alt="alt text" />
+      <div className="z-10 w-full flex justify-center items-center cursor-pointer">
+        {/* <img className="w-[133px] object-contain" src={logo} alt="alt text" /> */}
 
-        <div className="w-[491px] flex gap-x-[54px] relative min-w-0">
-          <h1 className="font-normal text-xl font-Inter text-black">
+        <div className="flex justify-center items-center gap-x-[54px] pt-5 relative min-w-0 bg-[#2121217e] w-full">
+          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
             About
           </h1>
-          <h1 className="font-normal text-xl font-Inter text-black">
+          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
             Our client
           </h1>
-          <h1 className="font-normal text-xl font-Inter text-black">
+          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
             Contact Us
           </h1>
         </div>
       </div>
 
-      <img className="w-[700px] h-[169px] object-contain mt-[5%]" src={logo} alt="alt text" />
-
-      <motion.img 
-        src={hero}
-        className="w-full md:w-[80%] md:translate-x-[27%] mt-[5%] relative"
-      />
-
-      {/* Slide Show */}
-      <div className="w-full p-5 flex flex-row overflow-x-scroll gap-7 mt-[10%] z-10">
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
-        <div className="flex flex-col items-center bg-white w-[50%] md:w-[20%] h-[40vh] p-2">
-          <div className="flex flex-row items-center gap-2 mt-1">
-            <h1 className="font-bold text-white text-[2rem] bg-[#A65840] rounded-[50%] p-2 ">1</h1>
-            <h1 className="font-bold text-[2rem]">Affordability</h1>
-          </div>
-          <p className="p-5">
-            Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits.
-          </p>
-        </div> 
+      <div className='flex overflow-hidden w-full h-[100vh] absolute top-0 left-0'>
+        <motion.img
+          animate={{ opacity : [0, 1], duration : 1 }}
+          transition={{ type: "linear" }}
+          src={imagesSlider[index]}
+          alt='slides'
+          className="w-full h-[100vh] transition-all"
+          key={imagesSlider[index]}
+        />
+        <button className="z-20 p-1 text-[4rem] absolute top-[50%] left-0 text-white" onClick={prevStep}>
+          &#129168;
+        </button>
+        <button className='z-20 p-1 text-[4rem] absolute top-[50%] right-0 text-white' onClick={nextStep}>
+          &#129170;
+        </button>
       </div>
 
-      <div className="w-full md:w-[80%] h-[50vh] bg-[#343E51] absolute top-[57%] md:top-[70%]">
-      </div>
+      <img className="w-[30%] object-contain mt-[15%] z-10" src={logo} alt="alt text" />
+      {/* <p className=" z-10 font-normal text-[2rem] font-Inter text-white text-center mt-[13%]">Introducing</p> */}
+      {/* <h1 className="z-10 font-normal text-[5rem] font-Inter text-white text-center mt-[1%]">Propzty</h1> */}
       
     </section>
   );
 }
 
-export default SectionWrapper(SectionOne, "");
+export default SectionOne;

@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 body{
+    max-width: min-content;
     width: 100% !important;
-    overflow-x: hidden;
-    background-color: #c0b7b7;
+    overflow-x: hidden !important;
+    background-color: #F2F0EA;
 }
 
 /* width */

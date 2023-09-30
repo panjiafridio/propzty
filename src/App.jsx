@@ -1,10 +1,11 @@
-import { Footer, SectionFive, SectionFour, SectionOne, SectionSix, SectionThree, SectionTwo } from "./component";
+import { Footer, SectionFive, SectionFour, SectionOne, SectionSix, SectionThree, SectionTwo, SlideShow } from "./component";
 
 const App = () => {
   return (
     <div>
       <SectionOne />
       <SectionTwo />
+      <SlideShow />
       <SectionThree />
       <SectionFour />
       <SectionFive />

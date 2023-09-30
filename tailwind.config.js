@@ -8,6 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         'Interior1': "url('/src/assets/Interior1.jpg')",
+        'Hero': "url('/src/assets/Room.jpg')",
+        'About': "url('/src/assets/roomtwo.jpg')",
       }
     },
   },

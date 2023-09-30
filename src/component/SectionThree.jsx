@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 
 const SectionThree = () => {
   return (
-        <section className="w-full flex flex-col md:flex-row relative">
+        <section className="w-full flex flex-col justify-around md:flex-row relative">
             <div className="w-full md:w-[50%] p-4 flex flex-col relative">
                 <motion.div 
                 initial={{ x : -100 }}
@@ -47,7 +47,7 @@ const SectionThree = () => {
             <motion.img 
                 initial={{ x : 100 }}
                 whileInView={{ x:0 }}
-                className="w-[50%] hidden md:block" 
+                className="w-[25%] hidden md:block" 
                 src={vanya} alt="alt text" 
             />
         </section>
