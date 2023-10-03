@@ -12,9 +12,9 @@ const SectionThree = () => {
                 initial={{ x : -100 }}
                 whileInView={{ x:0 }}
                 className="flex flex-col  relative">
-                <img className="w-[52.05%] mr-auto" src={vanyaLogo} alt="alt text" />
+                <img className="w-[32.05%] mr-auto" src={vanyaLogo} alt="alt text" />
                 <h2
-                    className="font-normal text-[25px] leading-[1.2] font-Inter text-[rgba(0,0,0,0.8)]">{`We're on a mission to be Bali's fastest-growing property developer, and we want you on board. Picture high-quality, innovative, and sustainable properties strategically positioned in a booming market. Our seasoned team of real estate, architecture, construction, and marketing experts is dedicated to crafting dream residences – villas, condos, apartments – for both local and global buyers.`}</h2>
+                    className="font-normal text-[1.5rem] mt-5 leading-[1.2] font-Inter text-[rgba(0,0,0,0.8)]">{`We're on a mission to be Bali's fastest-growing property developer, and we want you on board. Picture high-quality, innovative, and sustainable properties strategically positioned in a booming market. Our seasoned team of real estate, architecture, construction, and marketing experts is dedicated to crafting dream residences – villas, condos, apartments – for both local and global buyers.`}</h2>
                 </motion.div>
 
                 <div className="flex relative mt-6">

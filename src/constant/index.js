@@ -3,8 +3,8 @@ import { Interior1, Interior2, Interior3, Interior4, Interior5, Interior6, Room,
 export const sliders = [
     {
         "number" : 1,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Fractional Ownership",
+        "desc" : "Instead of buying an entire property, fractionalizing divides the property into smaller, affordable shares. Investors can purchase these shares, allowing them to co-own the property alongside others."
     },
     {
         "number" : 2,
@@ -13,28 +13,33 @@ export const sliders = [
     },
     {
         "number" : 3,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Diversification",
+        "desc" : "Fractional investing enables diversification across multiple properties or locations, reducing risk compared to putting all capital into a single property. It allows investors to build a diversified real estate portfolio easily"
     },
     {
         "number" : 4,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Professional Management",
+        "desc" : "Properties are typically managed by professionals or experienced property management companies. This relieves investors of the hassles of day-to-day management while ensuring optimal property performance."
     },
     {
         "number" : 5,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Liquidity",
+        "desc" : "Unlike traditional real estate investments, fractional ownership offers greater liquidity. Investors can sell their shares or exit their investment more easily, providing flexibility and control."
     },
     {
         "number" : 6,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Transparency",
+        "desc" : "Fractional platforms often provide detailed information about properties, financials, and performance metrics, giving investors transparency and confidence in their investment decisions."
     },
     {
         "number" : 7,
-        "teks" : "Affordability",
-        "desc" : "Fractionalization significantly lowers the barrier to entry. Investors can start with a smaller investment, as low as a fraction of the property &apos; s total value, and still enjoy ownership benefits."
+        "teks" : "Access to Premium Properties",
+        "desc" : "Investors can access high-end or premium properties that may have been out of reach individually, enhancing their investment portfolio."
+    },
+    {
+        "number" : 8,
+        "teks" : "Reduced Risk",
+        "desc" : "By sharing the investment with others, the risk is spread, making it a safer option for those looking to invest in real estate without taking on substantial individual risk."
     },
 ]
 

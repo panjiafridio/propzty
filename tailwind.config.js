@@ -12,6 +12,9 @@ export default {
         'About': "url('/src/assets/roomtwo.jpg')",
       }
     },
+    screens : {
+      'md': '770px',
+    }
   },
   plugins: [],
 }
