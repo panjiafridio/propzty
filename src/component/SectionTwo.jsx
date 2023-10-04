@@ -6,15 +6,15 @@ import { SectionWrapper } from "../hoc";
 
 const SectionTwo = () => {
     const [ref, inView] = useInView({
-        // triggerOnce: true,
-        threshold: 0.6, // elemen akan dianggap dalam tampilan saat setengahnya terlihat
+        triggerOnce: true,
+        threshold: 0.6,
     });
 
   return (
     <motion.div ref={ref}>
         <section className="flex md:flex-row flex-col relative mb-[10%] gap-10 bg-About bg-center bg-cover">
             <motion.img 
-                className="md:w-[50%] w-full h-[70vh] mt-4 opacity-0" 
+                className="md:w-[50%] w-full h-[30vh] mt-4 opacity-0" 
                 src={Room} 
                 alt="alt text" />
             <motion.div 

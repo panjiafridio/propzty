@@ -14,6 +14,7 @@ export default {
     },
     screens : {
       'md': '770px',
+      'sm': '430px',
     }
   },
   plugins: [],

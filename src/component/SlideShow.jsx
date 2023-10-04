@@ -7,15 +7,11 @@ import { sliders } from "../constant"
 const SlideShow = () => {
   const [refSlide, inView] = useInView({
     // triggerOnce: true,
-    threshold: 0.6, // elemen akan dianggap dalam tampilan saat setengahnya terlihat
+    threshold: 0.6,
 })
 
   return (
     <motion.div ref={refSlide}>
-      {/* <motion.img 
-        src={hero}
-        className="w-full md:w-[80%] md:translate-x-[27%] mt-[1%] relative"
-      /> */}
       <div className="w-full md:h-[10vh] sm:h-[20vh] h-[30vh] overflow-hidden">
         <motion.h1 
           initial={{ y: -100 }}
@@ -26,7 +22,7 @@ const SlideShow = () => {
             What is fractional investment?
         </motion.h1>
       </div>
-      <div className="w-full md:h-[6vh] h-[14vh] overflow-hidden">
+      <div className="w-full md:h-[6vh] h-[17vh] overflow-hidden">
         <motion.p 
           initial={{ y: 100 }}
           animate={inView ? { y : 0 } : {}}

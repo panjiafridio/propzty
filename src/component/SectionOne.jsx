@@ -10,9 +10,8 @@ const SectionOne = () => {
       
       {/* navbar */}
       <div className="z-10 w-full flex justify-center items-center cursor-pointer">
-        {/* <img className="w-[133px] object-contain" src={logo} alt="alt text" /> */}
 
-        <div className="flex justify-center items-center gap-x-[54px] pt-5 relative min-w-0 w-full">
+        <div className="flex justify-center items-center gap-x-[30px] md:gap-x-[54px] mx-auto pt-5 relative min-w-0 w-full">
           <h1 className="font-normal text-[1.7rem] font-Inter text-white">
             About
           </h1>
@@ -27,9 +26,7 @@ const SectionOne = () => {
 
       <Slideshow />
 
-      <img className="w-[30%] object-contain -mt-[30%] z-10" src={logo} alt="alt text" />
-      {/* <p className=" z-10 font-normal text-[2rem] font-Inter text-white text-center mt-[13%]">Introducing</p> */}
-      {/* <h1 className="z-10 font-normal text-[5rem] font-Inter text-white text-center mt-[1%]">Propzty</h1> */}
+      <img className="md:w-[30%] w-[50%] object-contain md:-mt-[30%] sm:-mt-[50%] -mt-[70%] z-10" src={logo} alt="alt text" />
       
     </section>
   );
