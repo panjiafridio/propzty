@@ -45,8 +45,8 @@ const SectionFive = () => {
         </div>
 
         <div className="w-full h-full bg-[#343E51] flex flex-col justify-center items-center overflow-x-hidden p-5 mt-[20%] md:mt-0">
-            <h1 className="md:text-[3.5rem] text-[2rem] text-[#212121] text-white">PHOTO GALLERY</h1>
-            <p className="text-[#212121] text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum?</p>
+            <h1 className="md:text-[3.5rem] text-[2rem] text-white">PHOTO GALLERY</h1>
+            <p className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum?</p>
             <div className="flex flex-wrap justify-center items-center w-full mt-[5%] gap-5">
                 {photosGallery.map((photo) => (
                     <motion.img whileHover={{ scale : [1, 1.5] }} key={photo.key} className="cursor-pointer md:w-[400px] w-[300px] md:h-[500px] h-[400px]" src={photo.img} alt="" />
