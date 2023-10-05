@@ -23,7 +23,7 @@ const SectionTwo = () => {
                 transition={{ duration: 0.5, type : 'tween' }}
                 // whileInView={{ y : [100, 0], opacity : [0, 1] }}
                 // transition={{ duration: 1, type: 'tween'}}
-                className="p-5 mt-[2%] w-full md:w-[40%] md:h-[60vh] flex justify-center items-center flex-col relative bg-white"
+                className="p-5 mt-[2%] w-full md:w-[40%] md:h-[60vh] lg:h-[80vh] flex justify-center items-center flex-col relative bg-white lg:bg-slate-500"
             >
                     <h1 className="font-normal text-[3.5rem] leading-[1.21] font-Inter text-black">
                     About Us</h1>

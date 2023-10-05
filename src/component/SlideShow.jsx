@@ -12,7 +12,7 @@ const SlideShow = () => {
 
   return (
     <motion.div ref={refSlide}>
-      <div className="w-full md:h-[10vh] sm:h-[20vh] h-[30vh] overflow-hidden">
+      <div className="w-full md:h-[10vh] sm:h-[20vh] lg:h-[25vh] h-[30vh] overflow-hidden">
         <motion.h1 
           initial={{ y: -100 }}
           animate={inView ? { y : 0 } : {}}
