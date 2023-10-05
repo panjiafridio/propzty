@@ -6,8 +6,6 @@ import Acc from "./Acc.png"
 import logo from "./logo.png"
 import client1 from "./client1.svg"
 import client2 from "./client2.svg"
-import clientmap from "./clientmap.svg"
-import textDarkInterior from "./text-dark-interior.svg"
 import Interior1 from "./Interior1.jpg"
 import Interior2 from "./Interior2.jpg"
 import Interior3 from "./Interior3.jpg"
@@ -20,7 +18,6 @@ import rocket from "./rocket.png"
 import vanyaLogo from "./vanya-logo.svg"
 import about from "./about.svg"
 import btnAnimate from "./btn-animate.svg"
-import hero from "./hero.svg"
 import footer from "./FooterDark.svg"
 
 
@@ -33,8 +30,6 @@ export {
     roomTwo,
     client1,
     client2,
-    clientmap,
-    textDarkInterior,
     Interior1,
     Interior2,
     Interior3,
@@ -47,6 +42,5 @@ export {
     rocket,
     about,
     btnAnimate,
-    hero,
     footer
 }
