@@ -4,7 +4,7 @@ import { SectionWrapper } from "../hoc"
 
 const Footer = () => {
   return (
-    <div>
+    <div id="contactUs">
       <img className="w-full" src={footer} alt="" />
     </div>
   )

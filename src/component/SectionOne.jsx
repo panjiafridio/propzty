@@ -12,14 +12,14 @@ const SectionOne = () => {
       <div className="z-10 w-full flex justify-center items-center cursor-pointer">
 
         <div className="flex justify-center items-center gap-x-[30px] md:gap-x-[54px] mx-auto pt-5 relative min-w-0 w-full">
-          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
-            About
+          <h1 className="font-bold text-[1.7rem] font-Inter text-white">
+            <a href="#About">About</a>
           </h1>
-          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
-            Our client
+          <h1 className="font-bold text-[1.7rem] font-Inter text-white">
+          <a href="#OurClient">Our client</a>
           </h1>
-          <h1 className="font-normal text-[1.7rem] font-Inter text-white">
-            Contact Us
+          <h1 className="font-bold text-[1.7rem] font-Inter text-white">
+            <a href="#contactUs">Contact Us</a>
           </h1>
         </div>
       </div>

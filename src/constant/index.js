@@ -45,21 +45,24 @@ export const sliders = [
 
 export const propertys = [
     {
-        "number" : 3,
-        "desc" : "Big Rooms",
-
+        "number" : "M4YA",
+        "desc" : "NAME"
     },
     {
-        "number" : 18,
-        "desc" : "Small Rooms"
+        "number" : "11.540 SQFT",
+        "desc" : "SIZE"
     },
     {
-        "number" : 2,
-        "desc" : "Car Garage"
+        "number" : "18 SMALL ROOMS, 3 BIG ROOMS",
+        "desc" : "ROOMS",
     },
     {
-        "number" : 11.640,
-        "desc" : "Home Size",
+        "number" : "CANGGU, BERAWA",
+        "desc" : "AREA",
+    },
+    {
+        "number" : "25 YEARS + 15 YEARS",
+        "desc" : "TERM",
     },
 ]
 

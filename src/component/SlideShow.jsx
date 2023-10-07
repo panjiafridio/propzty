@@ -12,12 +12,12 @@ const SlideShow = () => {
 
   return (
     <motion.div ref={refSlide}>
-      <div className="w-full md:h-[10vh] sm:h-[20vh] lg:h-[25vh] h-[30vh] overflow-hidden">
+      <div className="w-full md:h-[10vh] sm:h-[20vh] lg:h-[15vh] xl:h-[10vh] h-[30vh] overflow-hidden">
         <motion.h1 
           initial={{ y: -100 }}
           animate={inView ? { y : 0 } : {}}
           transition={{ duration: 0.5, type : 'tween'}}
-          className="font-bold md:text-[3rem] text-[2rem] font-Inter text-[#212121] text-center mt-[1%]"
+          className="font-bold md:text-[3rem] xl:text-[4rem] text-[2rem] font-Inter text-[#212121] text-center mt-[1%]"
         >
             What is fractional investment?
         </motion.h1>
@@ -27,7 +27,7 @@ const SlideShow = () => {
           initial={{ y: 100 }}
           animate={inView ? { y : 0 } : {}}
           transition={{ duration: 0.5, type : 'tween'}}
-          className="font-normal text-[1.2rem] font-Inter text-[#212121] text-center mt-[1%] opacity-[70%]"
+          className="font-normal text-[1.2rem] xl:text-[2rem] font-Inter text-[#212121] text-center mt-[1%] opacity-[70%]"
         >
           Say Goodbye to Barriers: How Fractional Investing Opens Doors for Everyone in Real Estate
         </motion.p>
@@ -44,7 +44,7 @@ const SlideShow = () => {
         <div key={slider.number} className="flex flex-col items-center bg-white p-2">
           <div className="w-[400px] flex flex-row items-center gap-2 mt-1">
             <h1 className="font-bold text-white text-[1rem] bg-[#A65840] text-center w-[40px] rounded-full p-2 ">{slider.number}</h1>
-            <h1 className="font-bold text-[rem]">{slider.teks}</h1>
+            <h1 className="font-bold text-[1.5rem]">{slider.teks}</h1>
           </div>
           <p className="p-5 text-[1rem]">
             {slider.desc}

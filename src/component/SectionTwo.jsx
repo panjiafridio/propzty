@@ -11,7 +11,7 @@ const SectionTwo = () => {
     });
 
   return (
-    <motion.div ref={ref}>
+    <motion.div id="About" ref={ref}>
         <section className="flex md:flex-row flex-col relative mb-[10%] gap-10 bg-About bg-center bg-cover">
             <motion.img 
                 className="md:w-[50%] w-full h-[30vh] mt-4 opacity-0" 

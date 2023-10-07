@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc"
 const SectionFour = () => {
     const [refFour, inView] = useInView({
         // triggerOnce: true,
-        threshold: 0.4, // elemen akan dianggap dalam tampilan saat setengahnya terlihat
+        threshold: 0.3, // elemen akan dianggap dalam tampilan saat setengahnya terlihat
     });
 
   return (
